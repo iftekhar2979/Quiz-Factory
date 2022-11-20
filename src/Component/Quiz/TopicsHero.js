@@ -29,7 +29,7 @@ const TopicsHero = () => {
           </div>
         </div>
         <img
-          src='https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+          src='https://source.unsplash.com/random/?programming'
           alt=''
           className='w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 bg-gray-500'
         />
