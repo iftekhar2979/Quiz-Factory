@@ -1,11 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
    
     <header className="navbar bg-sky-100 shadow-md">
   <div className="flex-1">
-    <a className="btn btn-ghost hover:bg-sky-200 normal-case text-2xl">Quiz-Factory</a>
+    <Link to='/' className="btn btn-ghost hover:bg-sky-200 normal-case text-2xl">Quiz-Factory</Link>
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal p-0">
