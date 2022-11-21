@@ -1,0 +1,5 @@
+@media only screen and (max-width: 600px) and (min-width: 350px)  {
+    ul.menu.menu-horizontal.p-0 {
+        display: none;
+    }
+}

@@ -1,23 +1,37 @@
 .options {
-    font-size: 2rem;
-    padding: 1rem;
-    color: #FFD662;
-    background: #01539D;
-    margin: 1rem;
-    width: 73%;
-    cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #ffd662;
+  background: #01539d;
+  margin: 1rem;
+  width: 73%;
+  cursor: pointer;
 }
 
 .bg-custom {
-    font-size: 3rem;
-    background: #00203F;
+  font-size: 3rem;
+  background: #00203f;
 }
 
 .headings {
-    color: #B2EEE6;
-    font-size: 2.5rem;
-    padding: 2rem;
+  color: #b2eee6;
+  font-size: 2.5rem;
+  padding: 2rem;
 }
-.options:hover{
-    background-color: #00B1D2;
+.options:hover {
+  background-color: #00b1d2;
+}
+@media only screen and (max-width: 850px) and (min-width: 350px) {
+  .options {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .bg-custom {
+    font-size: 1.75rem;
+  }
+  .headings {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }
