@@ -1,0 +1,23 @@
+.options {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #FFD662;
+    background: #01539D;
+    margin: 1rem;
+    width: 73%;
+    cursor: pointer;
+}
+
+.bg-custom {
+    font-size: 3rem;
+    background: #00203F;
+}
+
+.headings {
+    color: #B2EEE6;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+.options:hover{
+    background-color: #00B1D2;
+}
