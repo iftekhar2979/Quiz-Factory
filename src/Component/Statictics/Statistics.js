@@ -14,8 +14,6 @@ import { topicsContext } from '../Root/Root';
 const Statistics = () => {
   const questionStatistics = useContext(topicsContext);
   const data = questionStatistics.data;
-  console.log(data);
-
   return (
     <>
       <section className='bg-gray-800 text-gray-100'>
@@ -37,7 +35,7 @@ const Statistics = () => {
                 <CartesianGrid stroke='#ccc' strokeDasharray='5 5' />
                 <XAxis dataKey='name' />
                 <YAxis fill='#8884d8' />
-                <Tooltip />
+                <Tooltip fill='#8884d8'/>
               </LineChart>
             </div>
           </div>

@@ -4,16 +4,12 @@ import './quiz.css';
 import SingleQuiz from './SingleQuiz';
 const Quiz = () => {
   const quizes = useLoaderData();
-  //   console.log(quizes);
   const [mystate, setMystate] = useState([]);
   useEffect(() => {
     // 👇️ scroll to top on page load
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-    
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });  
   }, []);
-
-  const { id, total, name, logo, questions } = quizes.data;
-  // console.log(mystate);
+  const {  total, name, logo, questions } = quizes.data;
   const handleReset = () => {
     setMystate([]);
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -57,6 +53,7 @@ const Quiz = () => {
                     ? `Your ${name} Mark  is ${mystate.length} Your have to practice more`
                     : `Your Mark ${name} is ${mystate.length} `}
                 </p>
+                <p>Wrong Answer is {total-mystate.length}</p>
                 <div className='modal-action'>
                   <a
                     href='#'
@@ -71,7 +68,6 @@ const Quiz = () => {
           </div>
         </div>
       </div>
-      {/* <h2>Your Total answer is {mystate.length}</h2> */}
     </section>
   );
 };

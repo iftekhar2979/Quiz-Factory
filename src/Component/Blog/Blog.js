@@ -21,7 +21,6 @@ const Blog = () => {
     ]
     return (
         <div className='flex justify-center m-4'>
-            {/* <h2>Hello this is blog</h2> */}
             <div className=''>
             {
                 blogs.map(item=><SingleBlog key={item.id} data={item}></SingleBlog>)
