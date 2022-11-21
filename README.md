@@ -4,10 +4,10 @@ The project name is Quiz-
 It's is a fully responsive website . It is made by React Library Js. Here I have used React-Router also for routing part.
 
 Project Feature: 
-1.Routing by the category
-2.There used chart as total question of the categories in Statistics route.
-3.There I have created quiz right or wrong answer functionality and also result functionality.
-4.Another part is there is a blog section which contains some blogs.
+*Routing by the category
+*There used chart as total question of the categories in Statistics route.
+*There I have created quiz right or wrong answer functionality and also result functionality.
+*Another part is there is a blog section which contains some blogs.
 
 
-live site Link : 
+live site Link : https://quiz-factory.netlify.app/5
