@@ -9,6 +9,7 @@ const Quiz = () => {
   useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    
   }, []);
 
   const { id, total, name, logo, questions } = quizes.data;
@@ -35,6 +36,7 @@ const Quiz = () => {
             <SingleQuiz
               key={index}
               setState={setMystate}
+              state={mystate}
               index={index}
               data={question}
             ></SingleQuiz>

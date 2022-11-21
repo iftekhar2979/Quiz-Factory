@@ -35,3 +35,7 @@
     padding: 1rem;
   }
 }
+
+.activeBtn{
+  background-color: #00b1d2;
+}

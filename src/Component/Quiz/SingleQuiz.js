@@ -6,15 +6,16 @@ import './quiz.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const SingleQuiz = ({ data, setState }) => {
+const SingleQuiz = ({ data, setState ,state}) => {
   const [isAnswer, setisAnswer] = useState(false);
   const [answer, setAnswer] = useState('');
+  const [isActive,setIsActive]=useState(false)
   const { question, id, correctAnswer, options } = data;
-  // console.log(state);
   const handleClick = (option) => {
     const dataArr = Object.values(data);
     const findingAnswer = dataArr.includes(option);
     if (findingAnswer) {
+      setIsActive(true)
       toast.success('You Are Right!', {
         position: "top-center",
         autoClose: 2000,
@@ -24,8 +25,8 @@ const SingleQuiz = ({ data, setState }) => {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        });
-      console.log(findingAnswer);
+      });
+      // console.log(findingAnswer);
       setState((old) => [...old, Object.assign({}, dataArr)]);
     } else {
       toast.error('You are Wrong!', {
@@ -37,12 +38,13 @@ const SingleQuiz = ({ data, setState }) => {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        });
+      });
     }
+    
+    
   };
   const handletoggle = (id) => {
     if (id === data.id) {
-      // console.log(data.correctAnswer);
       setAnswer(data.correctAnswer);
     }
     setisAnswer(!isAnswer);
@@ -93,6 +95,7 @@ const SingleQuiz = ({ data, setState }) => {
               handleClick={handleClick}
               option={option}
               answer={answer}
+              active={isActive}
             ></Option>
           ))}
           {}
