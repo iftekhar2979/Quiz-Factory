@@ -10,8 +10,8 @@ const Navbar = () => {
   <div className="flex-none">
     <ul className="menu menu-horizontal p-0">
       <li className='text-xl hover:bg-sky-200 active:bg-sky-200'><NavLink to='/'>Topics</NavLink></li> 
-      <li className='text-xl hover:bg-sky-200'><NavLink to='/statistics'>Statictics</NavLink></li>
-      <li className='text-xl hover:bg-sky-200'><NavLink to='/blog'>Blogs</NavLink></li>
+      <li className='text-xl hover:bg-sky-200'><NavLink to='statistics'>Statistics</NavLink></li>
+      <li className='text-xl hover:bg-sky-200'><NavLink to='blog'>Blogs</NavLink></li>
     </ul>
   </div>
 </header>

@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import {
-    CartesianGrid,
-    Line,
-    LineChart,
-    Tooltip,
-    XAxis,
-    YAxis
+  CartesianGrid,
+  Line,
+  LineChart,
+  Tooltip,
+  XAxis,
+  YAxis
 } from 'recharts';
 
 import { topicsContext } from '../Root/Root';
